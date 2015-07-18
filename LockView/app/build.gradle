@@ -9,12 +9,25 @@ android {
         minSdkVersion 14
         targetSdkVersion 22
         versionCode 1
-        versionName "1.0"
+        versionName "0.1"
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        beta {
+            minifyEnabled true
+            proguardFiles 'proguard-android.txt', 'annotations.pro', 'proguard-rules.pro'
+            buildConfigField "boolean", "ENABLE_MULTIDEX", "true"
+            versionNameSuffix '.dev'
+            debuggable true
+        }
+        debug {
+            debuggable true
+            versionNameSuffix=".debug"
+            testCoverageEnabled true
+            buildConfigField "boolean", "ENABLE_MULTIDEX", "true"
         }
     }
 }
@@ -22,4 +35,8 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.facebook.fresco:fresco:0.5.3'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
 }
