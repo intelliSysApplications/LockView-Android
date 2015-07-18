@@ -15,3 +15,20 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+
+# Volley
+-keep class im.amomo.**{*;}
+-keep class com.douban.volley.** { *;}
+
+# Gson
+-keep class sun.misc.Unsafe { *; }
+
+# EventBus
+-keepclassmembers class ** {
+    public void onEvent*(**);
+}
+
+# ButterKnife
+-dontwarn butterknife.internal.**
+-keep class **$$ViewInjector { *; }
+-keepnames class * { @butterknife.InjectView *;}
