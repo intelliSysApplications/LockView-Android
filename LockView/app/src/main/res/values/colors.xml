@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Common Colors -->
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="soft_black">#111111</color>
+    <color name="black_translucent">#60000000</color>
+    <color name="white">#ffffff</color>
+    <color name="soft_white">#f0f0f0</color>
+    <color name="white_translucent">#60ffffff</color>
+    <color name="gray">#999999</color>
+    <color name="gray_background_pressed">#C5C5C5</color>
+    <color name="gray_background">#EDEDED</color>
+    <color name="gray_dark">#333333</color>
+    <color name="gray_dark_transluent">#60333333</color>
+    <color name="gray_light">#cccccc</color>
+    <color name="light_gray">#EEEEEE</color>
+    <color name="red">#ff4242</color>
+    <color name="blue">#00FFFF</color>
+    <color name="green">#9dde14</color>
+    <color name="orange">#fa512d</color>
+    <color name="splash">#da5547</color>
+
+    <!-- text -->
+    <color name="text_red">#a3674a</color>
+    <color name="text_orange">#f9725b</color>
+    <color name="text_black">#000000</color>
+    <color name="text_gray">#9e9e9e</color>
+    <color name="text_login_red">#ED4F37</color>
+    <color name="text_login_gray">#999</color>
+    <color name="text_login_black">#555</color>
+    <color name="text_signup_dark">#666</color>
+    <color name="text_publish_dark">#888</color>
+
+    <color name="colorBackgroundHighlightLight">@color/black_translucent</color>
+    <color name="background">#f2eeec</color>
+    <color name="send_button">#a6a6a6</color>
+    <color name="btn_bg_disable">#F8F8F8</color>
+    <color name="btn_bg_enable">#ED4F37</color>
+    <color name="btn_border">#C7C7CD</color>
+</resources>

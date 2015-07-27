@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">LockView</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <!-- Home View Pager Titles-->
+    <string name="fragment_title_intro_image">Intro Image</string>
+    <string name="fragment_title_intro_topic">Intro Topic</string>
+    <string name="fragment_title_preview">Preview</string>
+    <string name="fragment_title_set_color">Set Color</string>
+    <string name="fragment_title_set_image">Set Image</string>
+    <string name="fragment_title_set_topic">Set Topic</string>
 </resources>
