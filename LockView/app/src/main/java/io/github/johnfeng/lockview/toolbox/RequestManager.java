@@ -2,16 +2,10 @@ package io.github.johnfeng.lockview.toolbox;
 
 import android.content.Context;
 
-import com.android.volley.AuthFailureError;
-import com.android.volley.DefaultRetryPolicy;
-import com.android.volley.NetworkResponse;
-import com.android.volley.ParseError;
-import com.android.volley.Request;
 import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyLog;
-import com.android.volley.toolbox.Authenticator;
-import com.android.volley.toolbox.HttpHeaderParser;
+import com.android.volley.toolbox.Volley;
+import com.squareup.okhttp.Request;
+
 /**
  * Created by guangweifeng on 16/08/15.
  */
@@ -30,7 +24,7 @@ public class RequestManager {
         return Instance;
     }
 
-    public RequestManager init(Context context){
+    public RequestManager init(Context context) {
         this.mContext = context;
 
         //TODO: init Velloy
@@ -60,7 +54,7 @@ public class RequestManager {
 
     public RequestQueue getRequestQueue() {
         checkInit();
-
+        return Volley.newRequestQueue(mContext);
     }
 
     public void addRequest(Request request) {
