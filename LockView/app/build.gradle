@@ -40,6 +40,8 @@ dependencies {
     compile 'com.jakewharton:butterknife:6.1.0'
     compile 'com.squareup.okhttp:okhttp:2.4.0'
     compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.mcxiaoke.volley:library:1.0.18'
 
     compile 'com.google.android.gms:play-services:7.5.0'
 
