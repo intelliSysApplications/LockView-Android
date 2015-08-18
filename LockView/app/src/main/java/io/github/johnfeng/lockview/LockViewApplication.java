@@ -4,6 +4,8 @@ import android.app.Application;
 
 import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.Tracker;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import io.github.johnfeng.lockview.utils.TrackEventUtil;
 
@@ -17,6 +19,7 @@ public class LockViewApplication extends Application {
     private static GoogleAnalytics analytics;
     private static Tracker tracker;
     private static LockViewApplication mInstance;
+    private static Gson mGson;
 
     public static GoogleAnalytics getAnalytics() {
         return analytics;
@@ -33,6 +36,30 @@ public class LockViewApplication extends Application {
 
         initGATracker();
         trackOnAppStart();
+        initGson();
+    }
+
+    public static LockViewApplication getApp() {
+        if (mInstance == null) {
+            mInstance = new LockViewApplication();
+        }
+        return mInstance;
+    }
+
+    private void initGson() {
+        if (mGson == null) {
+            new GsonBuilder().serializeNulls()
+                    .generateNonExecutableJson()
+                    .setPrettyPrinting()
+                    .create();
+        }
+    }
+
+    public Gson getGsonInstance() {
+        if (mGson == null) {
+            initGson();
+        }
+        return mGson;
     }
 
     private void initGATracker() {
