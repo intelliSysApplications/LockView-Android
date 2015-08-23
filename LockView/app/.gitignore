@@ -1,1 +1,17 @@
+gen
+bin
+target
+*.swp
+.idea
+.settings
+*.iml
+.classpath
+.project
+out
+classes
+gen-external-apklibs
+local.properties
+.DS_Store
+.gradle
+build_by_gradle.sh
 /build/

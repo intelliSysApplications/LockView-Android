@@ -9,4 +9,13 @@
     <string name="fragment_title_set_color">Set Color</string>
     <string name="fragment_title_set_image">Set Image</string>
     <string name="fragment_title_set_topic">Set Topic</string>
+
+    <!-- Intro Text -->
+    <string name="intro_image_button_text">Let\'s go!</string>
+    <string name="intro_image_title">Prefer your own image as your lock screen?or,we will get a perfect one for you from Bing.</string>
+    <string name="intro_image_title_1">USE MY OWN IMAGE</string>
+    <string name="intro_image_content_1">Choose this if you would like to use the same image as your lock scren over time.In the next step we will let you pick one from your library.</string>
+    <string name="intro_image_title_2">BING</string>
+    <string name="intro_image_content_2">Refresh your day with a new cover photo from Bing everyday.If you choose this option, you agree that all rights belong to the repectvie owners of the iamge.</string>
+
 </resources>
