@@ -6,7 +6,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/intro_topic_title"
+        android:id="@+id/set_topic_title"
         style="@style/Text.LockView.H2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,11 +14,11 @@
         android:layout_marginTop="10dp"
         android:background="@color/purple"
         android:padding="15dp"
-        android:text="@string/intro_topic_title"
+        android:text="@string/set_topic_title"
         android:textColor="@color/white"
         android:textStyle="normal" />
 
-    <Button android:id="@+id/intro_topic_button"
+    <Button android:id="@+id/set_topic_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -26,12 +26,13 @@
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="20dp"
         android:background="@drawable/lockview_button_selector"
-        android:text="@string/intro_topic_button_text" />
+        android:text="@string/set_topic_button_text" />
 
     <ScrollView android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/intro_topic_button"
-        android:layout_below="@id/intro_topic_title">
+        android:layout_above="@id/set_topic_button"
+        android:layout_below="@id/set_topic_title"
+        android:layout_marginTop="10dp">
 
         <LinearLayout android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -39,68 +40,46 @@
             android:padding="20dp">
 
             <TextView
-                android:id="@+id/intro_topic_title1"
-                style="@style/Text.LockView.H2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:padding="15dp"
-                android:text="@string/intro_topic_title_1"
-                android:textColor="@color/purple"
-                android:textStyle="normal" />
-
-            <TextView
-                android:id="@+id/intro_topic_content1"
+                android:id="@+id/set_topic_hint"
                 style="@style/Text.LockView.P3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:padding="15dp"
-                android:text="@string/intro_topic_content_1"
-                android:textColor="@color/white"
+                android:padding="5dp"
+                android:text="@string/set_topic_title"
+                android:textColor="@color/text_gray"
                 android:textStyle="normal" />
 
-            <TextView
-                android:id="@+id/intro_topic_title2"
-                style="@style/Text.LockView.H2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:padding="15dp"
-                android:text="@string/intro_topic_title_2"
-                android:textColor="@color/purple"
-                android:textStyle="normal" />
-
-            <TextView
-                android:id="@+id/intro_topic_content2"
+            <EditText
+                android:id="@+id/set_topic_edit_text"
                 style="@style/Text.LockView.P3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:padding="15dp"
-                android:text="@string/intro_topic_content_2"
-                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
                 android:textStyle="normal" />
 
             <TextView
-                android:id="@+id/intro_topic_title3"
-                style="@style/Text.LockView.H2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:padding="15dp"
-                android:text="@string/intro_topic_title_3"
-                android:textColor="@color/purple"
-                android:textStyle="normal" />
-
-            <TextView
-                android:id="@+id/intro_topic_content3"
+                android:id="@+id/set_topic_explanation"
                 style="@style/Text.LockView.P3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:padding="15dp"
-                android:text="@string/intro_topic_content_3"
+                android:padding="10dp"
+                android:text="@string/set_topic_explanation"
+                android:textColor="@color/text_gray"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/set_topic_sample"
+                style="@style/Text.LockView.P3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
                 android:textColor="@color/white"
                 android:textStyle="normal" />
 
