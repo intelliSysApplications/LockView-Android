@@ -15,3 +15,4 @@ local.properties
 .gradle
 build_by_gradle.sh
 /build/
+.idea/workspace.xml
