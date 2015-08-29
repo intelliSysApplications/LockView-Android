@@ -16,3 +16,4 @@ local.properties
 build_by_gradle.sh
 /build/
 .idea/workspace.xml
+LockView/.idea/workspace.xml

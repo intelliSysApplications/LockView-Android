@@ -18,4 +18,14 @@
     <string name="intro_image_title_2">BING</string>
     <string name="intro_image_content_2">Refresh your day with a new cover photo from Bing everyday.If you choose this option, you agree that all rights belong to the repectvie owners of the iamge.</string>
 
+    <!-- Intro Text -->
+    <string name="intro_topic_button_text">Let\'s go!</string>
+    <string name="intro_topic_title">What would you like to read in your lock screen?Select a category from below.</string>
+    <string name="intro_topic_title_1">SPECIFIC TOPIC OF YOUR CHOICE</string>
+    <string name="intro_topic_content_1">This option allows user tp use a specific topic of their interests.For example,if you are interested in Microsoft news,just type in Microsoft and we\'ll gather you the hottest and lastest Microsoft news.</string>
+    <string name="intro_topic_title_2">GENERIC NEWS TOPIC</string>
+    <string name="intro_topic_content_2">Love News,Sports or Finance?We got you covered.Choose this option if you would like to see a broader news topic</string>
+    <string name="intro_topic_title_3">LANGUAGE LEARNING</string>
+    <string name="intro_topic_content_3">Transform your phone to a best language learning tool.Learn a new word from a language of your choice right from the lock screen!</string>
+
 </resources>
