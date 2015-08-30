@@ -16,7 +16,7 @@ import io.github.johnfeng.lockview.fragment.BaseFragment;
 import io.github.johnfeng.lockview.fragment.IntroImageFragment;
 import io.github.johnfeng.lockview.fragment.IntroTopicFragment;
 import io.github.johnfeng.lockview.fragment.PreviewFragment;
-import io.github.johnfeng.lockview.fragment.SetColorFragment;
+import io.github.johnfeng.lockview.fragment.SettingsFragment;
 import io.github.johnfeng.lockview.fragment.SetImageFragment;
 import io.github.johnfeng.lockview.fragment.SetTopicFragment;
 import io.github.johnfeng.lockview.toolbox.BusProvider;
@@ -102,7 +102,7 @@ public class MainActivity extends BaseActivity {
                 mFragment = SetTopicFragment.getInstance();
                 break;
             case INDEX_SET_COLOR:
-                mFragment = SetColorFragment.getInstance();
+                mFragment = SettingsFragment.getInstance();
                 break;
             case INDEX_PREVIEW:
                 mFragment = PreviewFragment.getInstance();
@@ -143,7 +143,7 @@ public class MainActivity extends BaseActivity {
                     mFragment = SetTopicFragment.getInstance();
                     break;
                 case INDEX_SET_COLOR:
-                    mFragment = SetColorFragment.getInstance();
+                    mFragment = SettingsFragment.getInstance();
                     break;
                 case INDEX_PREVIEW:
                     mFragment = PreviewFragment.getInstance();

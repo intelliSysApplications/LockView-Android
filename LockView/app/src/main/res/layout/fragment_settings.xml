@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/settings_title"
+        style="@style/Text.LockView.H2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/purple"
+        android:padding="15dp"
+        android:text="@string/settings_title"
+        android:textColor="@color/white"
+        android:textStyle="normal" />
+
+    <Button android:id="@+id/settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/lockview_button_selector"
+        android:text="@string/settings_button_text" />
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/settings_button"
+        android:layout_below="@id/settings_title"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- title foreground -->
+
+            <RelativeLayout android:id="@+id/settings_title_foreground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground">
+                <TextView
+                    style="@style/Text.LockView.H2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:text="@string/settings_title_foreground"
+                    android:textColor="@color/purple"
+                    android:textStyle="normal" />
+
+                <View
+                    android:id="@+id/settings_title_foreground_color"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/white"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <!-- content foreground -->
+
+            <RelativeLayout
+                android:id="@+id/settings_content_foreground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground">
+
+                <TextView
+                    style="@style/Text.LockView.H2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:text="@string/settings_content_foreground"
+                    android:textColor="@color/purple"
+                    android:textStyle="normal" />
+
+                <View android:id="@+id/settings_content_foreground_color"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/white"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <!-- title background -->
+
+            <RelativeLayout
+                android:id="@+id/settings_title_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground">
+
+                <TextView
+                    style="@style/Text.LockView.H2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:text="@string/settings_title_background"
+                    android:textColor="@color/purple"
+                    android:textStyle="normal" />
+
+                <View
+                    android:id="@+id/settings_title_background_color"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/white"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <!-- content background -->
+
+            <RelativeLayout
+                android:id="@+id/settings_content_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground">
+
+                <TextView
+                    style="@style/Text.LockView.H2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:text="@string/settings_content_background"
+                    android:textColor="@color/purple"
+                    android:textStyle="normal" />
+
+                <View
+                    android:id="@+id/settings_content_background_color"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/white"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <!-- title fontsize -->
+
+            <RelativeLayout
+                android:id="@+id/settings_title_fontsize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground">
+
+                <TextView
+                    style="@style/Text.LockView.H2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:text="@string/settings_title_fontzise"
+                    android:textColor="@color/purple"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/settings_title_fontsize_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="26"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <!-- content fontsize -->
+
+            <RelativeLayout
+                android:id="@+id/settings_content_fontsize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground">
+
+                <TextView
+                    style="@style/Text.LockView.H2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:text="@string/settings_content_fontsize"
+                    android:textColor="@color/purple"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/settings_content_fontsize_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="26"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

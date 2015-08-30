@@ -28,10 +28,24 @@
     <string name="intro_topic_title_3">LANGUAGE LEARNING</string>
     <string name="intro_topic_content_3">Transform your phone to a best language learning tool.Learn a new word from a language of your choice right from the lock screen!</string>
 
-    <!-- Set Topic Text-->
+    <!-- Set Topic Text -->
     <string name="set_topic_title">Tell us about a specific topic.We\'ll gather all news about it for you.</string>
     <string name="set_topic_hint">Type in a specific topic. e.g.Apple,UW,Google,President,Seahawk.</string>
     <string name="set_topic_explanation">LockView is not a news provider.All related news is culled from Internet.</string>
     <string name="set_topic_button_text">Preview</string>
+
+    <!-- Preview Text -->
+    <string name="preview_button_text">Great!</string>
+    <string name="preview_hint">You can customize styles by tapping the preview texts.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Customize the portion of the text you chose with new color and size.</string>
+    <string name="settings_title_foreground">Title Foreground</string>
+    <string name="settings_content_foreground">Content Foreground</string>
+    <string name="settings_title_background">Title Background</string>
+    <string name="settings_content_background">Content Background</string>
+    <string name="settings_title_fontzise">Title Fontsize</string>
+    <string name="settings_content_fontsize">Content Fontsize</string>
+    <string name="settings_button_text">Done!</string>
 
 </resources>
