@@ -14,22 +14,22 @@
 
     <style name="Text.LockView.H2"
         parent="Text.LockView.H">
-        <item name="android:textSize">22sp</item>
+        <item name="android:textSize">19sp</item>
     </style>
 
     <style name="Text.LockView.H3"
         parent="Text.LockView.H">
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">17sp</item>
     </style>
 
     <style name="Text.LockView.H4"
         parent="Text.LockView.H">
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">15sp</item>
     </style>
 
     <style name="Text.LockView.H5"
         parent="Text.LockView.H">
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">13sp</item>
     </style>
 
     <!-- Paragraph Text Style-->
@@ -56,7 +56,7 @@
 
     <style name="Text.LockView.P6"
         parent="Text.LockView.P">
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">11sp</item>
     </style>
 
 </resources>

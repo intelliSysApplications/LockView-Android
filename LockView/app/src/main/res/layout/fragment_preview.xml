@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView android:id="@+id/preview_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/preview_button"
+            style="@style/Text.LockView.P3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/lockview_button_selector"
+            android:text="@string/preview_button_text" />
+
+        <TextView
+            android:id="@+id/preview_hint"
+            style="@style/Text.LockView.P3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/preview_button"
+            android:background="@color/purple_translucent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="@string/preview_hint" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/preview_hint"
+            android:layout_alignParentTop="true"
+            android:background="@color/black_translucent"
+            android:paddingBottom="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp"
+            android:orientation="vertical">
+
+            <TextView android:id="@+id/preview_title"
+                style="@style/Text.LockView.H2"
+                android:layout_width="match_parent"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="Title Line"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/preview_content"
+                style="@style/Text.LockView.H3"
+                android:layout_width="match_parent"
+                android:maxLines="5"
+                android:ellipsize="end"
+                android:text="Content Content Content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/preview_time"
+                android:ellipsize="end"
+                style="@style/Text.LockView.P4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Today"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_signup_dark" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>
