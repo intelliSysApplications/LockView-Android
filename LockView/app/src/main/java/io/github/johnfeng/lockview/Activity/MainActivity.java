@@ -52,6 +52,8 @@ public class MainActivity extends BaseActivity {
         initGridView();
         BusProvider.getInstance()
                 .register(this);
+
+        switchFragment(INDEX_INTRO_IMAGE);
     }
 
     @Override
